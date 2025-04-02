@@ -1,4 +1,3 @@
-import openai
 import json
 import subprocess
 import sys
@@ -6,23 +5,7 @@ import os
 from evalplus.data import get_human_eval_plus, write_jsonl
 from evalplus.sanitize import script
 from evalplus.evaluate import evaluate
-
-# Set your API key
-client = openai.Client(api_key = os.environ.get("OPENAI_API_KEY"))
-
-def gen_solution(prompt):
-    try:
-        response = client.chat.completions.create(
-            model="gpt-4o",  
-            messages=[{"role": "system", "content": "Please make a complete python code solution for the following problem. Do not include tests or excessive comments."}, {"role": "user", "content": prompt}],
-            temperature=0.7,
-            max_tokens=512
-        )
-        return response.choices[0].message.content.strip()
-    except Exception as e:
-        print(f"Error generating solution: {e}")
-        return ""
-
+import gen_solution 
 
 def main():
     problems = get_human_eval_plus()
@@ -35,7 +18,9 @@ def main():
 
     print(f"Solving Problem: {problem['prompt']}")
 
-    solution = gen_solution(problem["prompt"])
+    #solution = gen_solution.gpt4o(problem["prompt"])
+    solution = gen_solution.deepseek(problem["prompt"])
+
     # use BO to figure out a better or append existing prompt with new instruction: promt_aug
     # call LLM with this prompt_aug which will return code samples
     # 
