@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/134", "solution": "def check_if_last_char_is_a_letter(txt):\n    txt = txt.strip()\n    if txt and txt[-1].isalpha():\n        words = txt.split()\n        if txt[-1] not in words[-1]:\n            return True\n    return False"}

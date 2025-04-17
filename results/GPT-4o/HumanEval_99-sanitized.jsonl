@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/99", "solution": "def closest_integer(value):\n    # Convert the string value to a float\n    number = float(value)\n    \n    # Use round with the 'away from zero' strategy\n    if number > 0:\n        return int(number + 0.5)\n    else:\n        return int(number - 0.5)"}

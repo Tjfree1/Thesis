@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/116", "solution": "def sort_array(arr):\n    return sorted(arr, key=lambda x: (bin(x).count('1'), x))"}

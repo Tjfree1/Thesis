@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/122", "solution": "```python\ndef add_elements(arr, k):\n    return sum(x for x in arr[:k] if -100 < x < 100)\n\n# Example usage:\narr = [111, 21, 3, 4000, 5, 6, 7, 8, 9]\nk = 4\nprint(add_elements(arr, k))  # Output: 24\n```"}

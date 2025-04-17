@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/4", "solution": "from typing import List\ndef mean_absolute_deviation(numbers: List[float]) -> float:\n    if not numbers:\n        return 0.0\n    \n    mean_value = sum(numbers) / len(numbers)\n    deviations = [abs(x - mean_value) for x in numbers]\n    mad = sum(deviations) / len(numbers)\n    \n    return mad"}

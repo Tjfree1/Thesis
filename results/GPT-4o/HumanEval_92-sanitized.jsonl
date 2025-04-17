@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/92", "solution": "def any_int(x, y, z):\n    if isinstance(x, int) and isinstance(y, int) and isinstance(z, int):\n        return x == y + z or y == x + z or z == x + y\n    return False"}

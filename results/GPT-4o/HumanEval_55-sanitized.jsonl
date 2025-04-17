@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/55", "solution": "def fib(n: int) -> int:\n    if n <= 0:\n        raise ValueError(\"n should be a positive integer\")\n    elif n == 1:\n        return 1\n    elif n == 2:\n        return 1\n    else:\n        a, b = 1, 1\n        for _ in range(2, n):\n            a, b = b, a + b\n        return b"}

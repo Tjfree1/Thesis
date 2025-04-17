@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/157", "solution": "```python\ndef right_angle_triangle(a, b, c):\n    sides = sorted([a, b, c])\n    return sides[0]**2 + sides[1]**2 == sides[2]**2\n\n# Example usage\nprint(right_angle_triangle(3, 4, 5))  # True\nprint(right_angle_triangle(1, 2, 3))  # False\n```"}

@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/103", "solution": "def rounded_avg(n, m):\n    if n > m:\n        return -1\n    \n    total_numbers = m - n + 1\n    total_sum = (m * (m + 1) // 2) - ((n - 1) * n // 2)\n    average = total_sum / total_numbers\n    rounded_average = round(average)\n    \n    return bin(rounded_average)"}

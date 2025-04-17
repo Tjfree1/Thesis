@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/58", "solution": "def common(l1: list, l2: list):\n    \"\"\"Return sorted unique common elements for two lists.\"\"\"\n    return sorted(set(l1) & set(l2))"}

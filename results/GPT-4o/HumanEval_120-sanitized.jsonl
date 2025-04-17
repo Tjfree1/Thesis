@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/120", "solution": "def maximum(arr, k):\n    # Sort the array in descending order and take the first k elements\n    max_k_elements = sorted(arr, reverse=True)[:k]\n    # Return the sorted list of those k elements\n    return sorted(max_k_elements)"}

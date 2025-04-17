@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/70", "solution": "```python\ndef strange_sort_list(lst):\n    lst.sort()\n    result = []\n    while lst:\n        result.append(lst.pop(0))  # Append the minimum value\n        if lst:\n            result.append(lst.pop(-1))  # Append the maximum value\n    return result\n```"}

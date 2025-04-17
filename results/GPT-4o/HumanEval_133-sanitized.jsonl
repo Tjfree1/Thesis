@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/133", "solution": "import math\ndef sum_squares(lst):\n    return sum(math.ceil(x) ** 2 for x in lst)"}

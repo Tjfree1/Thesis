@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/53", "solution": "```python\ndef add(x: int, y: int) -> int:\n    \"\"\"Add two numbers x and y\"\"\"\n    return x + y\n```"}

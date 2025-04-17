@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/67", "solution": "```python\ndef fruit_distribution(s, n):\n    parts = s.split()\n    apples = int(parts[0])\n    oranges = int(parts[3])\n    return n - apples - oranges\n\n# Example usage:\n# result = fruit_distribution(\"5 apples and 6 oranges\", 19)\n# print(result)  # Output: 8\n```"}

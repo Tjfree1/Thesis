@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/116", "solution": "```python\ndef sort_array(arr):\n    return sorted(arr, key=lambda x: (bin(x).count('1'), x))\n\n# Example usage:\nprint(sort_array([1, 5, 2, 3, 4]))  # Output: [1, 2, 4, 3, 5]\nprint(sort_array([1, 0, 2, 3, 4]))  # Output: [0, 1, 2, 4, 3]\n```"}

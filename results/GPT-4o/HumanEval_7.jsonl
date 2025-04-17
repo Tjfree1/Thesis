@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/7", "solution": "```python\nfrom typing import List\n\ndef filter_by_substring(strings: List[str], substring: str) -> List[str]:\n    return [s for s in strings if substring in s]\n\n# Example usage:\n# filtered_strings = filter_by_substring(['abc', 'bacd', 'cde', 'array'], 'a')\n# print(filtered_strings)  # Output: ['abc', 'bacd', 'array']\n```"}

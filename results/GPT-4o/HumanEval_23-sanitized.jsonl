@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/23", "solution": "def strlen(string: str) -> int:\n    return len(string)"}

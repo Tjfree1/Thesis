@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/45", "solution": "```python\ndef triangle_area(a, h):\n    \"\"\"Given length of a side and height return area for a triangle.\"\"\"\n    return 0.5 * a * h\n\n# Example usage:\narea = triangle_area(5, 3)\nprint(area)  # Output: 7.5\n```"}

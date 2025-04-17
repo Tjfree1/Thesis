@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/60", "solution": "def sum_to_n(n: int) -> int:\n    return n * (n + 1) // 2"}

@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/15", "solution": "def string_sequence(n: int) -> str:\n    return ' '.join(str(i) for i in range(n + 1))"}

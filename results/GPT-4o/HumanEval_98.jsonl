@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/98", "solution": "```python\ndef count_upper(s):\n    vowels = set('AEIOU')\n    count = 0\n    for i in range(0, len(s), 2):\n        if s[i] in vowels:\n            count += 1\n    return count\n\n# Example usage:\n# print(count_upper('aBCdEf'))  # Output: 1\n# print(count_upper('abcdefg'))  # Output: 0\n# print(count_upper('dBBE'))     # Output: 0\n```"}

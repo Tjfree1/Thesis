@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/52", "solution": "```python\ndef below_threshold(l: list, t: int) -> bool:\n    return all(x < t for x in l)\n\n# Example usage:\n# print(below_threshold([1, 2, 4, 10], 100))  # Output: True\n# print(below_threshold([1, 20, 4, 10], 5))   # Output: False\n```"}

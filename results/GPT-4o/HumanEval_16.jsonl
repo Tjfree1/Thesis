@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/16", "solution": "```python\ndef count_distinct_characters(string: str) -> int:\n    return len(set(string.lower()))\n\n# Example usage:\n# print(count_distinct_characters('xyzXYZ')) # Output: 3\n# print(count_distinct_characters('Jerry'))  # Output: 4\n```"}

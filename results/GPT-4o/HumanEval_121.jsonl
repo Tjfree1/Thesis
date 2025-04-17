@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/121", "solution": "```python\ndef solution(lst):\n    return sum(lst[i] for i in range(0, len(lst), 2) if lst[i] % 2 != 0)\n\n# Example usage:\n# print(solution([5, 8, 7, 1]))  # Output: 12\n# print(solution([3, 3, 3, 3, 3]))  # Output: 9\n# print(solution([30, 13, 24, 321]))  # Output: 0\n```"}

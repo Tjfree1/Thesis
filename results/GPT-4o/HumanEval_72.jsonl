@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/72", "solution": "```python\ndef will_it_fly(q, w):\n    return q == q[::-1] and sum(q) <= w\n\n# Example usage:\n# result1 = will_it_fly([1, 2], 5)  # False\n# result2 = will_it_fly([3, 2, 3], 1)  # False\n# result3 = will_it_fly([3, 2, 3], 9)  # True\n# result4 = will_it_fly([3], 5)  # True\n```"}

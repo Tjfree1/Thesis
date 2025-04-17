@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/35", "solution": "def max_element(l: list):\n    \"\"\"Return maximum element in the list.\"\"\"\n    if not l:\n        return None\n    max_val = l[0]\n    for num in l:\n        if num > max_val:\n            max_val = num\n    return max_val"}

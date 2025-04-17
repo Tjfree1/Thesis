@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/161", "solution": "def solve(s):\n    if any(c.isalpha() for c in s):\n        return ''.join(c.swapcase() if c.isalpha() else c for c in s)\n    else:\n        return s[::-1]"}

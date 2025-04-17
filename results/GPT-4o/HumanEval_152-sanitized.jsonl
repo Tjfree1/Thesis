@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/152", "solution": "def compare(game, guess):\n    return [abs(g - ge) for g, ge in zip(game, guess)]"}

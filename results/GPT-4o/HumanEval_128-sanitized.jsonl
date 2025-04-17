@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/128", "solution": "def prod_signs(arr):\n    if not arr:\n        return None\n    \n    magnitude_sum = 0\n    sign_product = 1\n    \n    for num in arr:\n        magnitude_sum += abs(num)\n        if num == 0:\n            sign_product = 0\n        else:\n            sign_product *= (1 if num > 0 else -1)\n    \n    return magnitude_sum * sign_product"}

@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/162", "solution": "import hashlib\ndef string_to_md5(text):\n    if not text:\n        return None\n    \n    md5_hash = hashlib.md5()\n    md5_hash.update(text.encode('utf-8'))\n    \n    return md5_hash.hexdigest()"}

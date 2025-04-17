@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/9", "solution": "from typing import List\ndef rolling_max(numbers: List[int]) -> List[int]:\n    if not numbers:\n        return []\n    \n    max_so_far = numbers[0]\n    result = [max_so_far]\n    \n    for number in numbers[1:]:\n        if number > max_so_far:\n            max_so_far = number\n        result.append(max_so_far)\n    \n    return result"}

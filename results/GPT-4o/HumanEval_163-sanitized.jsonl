@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/163", "solution": "def generate_integers(a, b):\n    # Ensure a is less than or equal to b for consistency\n    if a > b:\n        a, b = b, a\n        \n    # Find the start of the even numbers\n    start = a if a % 2 == 0 else a + 1\n    \n    # Generate the list of even numbers between a and b\n    return list(range(start, b + 1, 2))"}

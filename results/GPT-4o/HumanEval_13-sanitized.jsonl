@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/13", "solution": "def greatest_common_divisor(a: int, b: int) -> int:\n    while b != 0:\n        a, b = b, a % b\n    return abs(a)"}

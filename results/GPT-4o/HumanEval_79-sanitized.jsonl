@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/79", "solution": "def decimal_to_binary(decimal):\n    binary_str = bin(decimal)[2:]  # Convert to binary and strip the '0b' prefix\n    return f\"db{binary_str}db\""}

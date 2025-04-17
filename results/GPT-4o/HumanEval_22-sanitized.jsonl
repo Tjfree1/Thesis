@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/22", "solution": "from typing import List, Any\ndef filter_integers(values: List[Any]) -> List[int]:\n    return [value for value in values if isinstance(value, int)]"}

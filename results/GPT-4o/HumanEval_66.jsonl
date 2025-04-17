@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/66", "solution": "```python\ndef digitSum(s):\n    return sum(ord(char) for char in s if char.isupper())\n\n# Example usage:\n# result = digitSum(\"abAB\")\n# print(result)  # Output: 131\n```"}

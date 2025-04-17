@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/131", "solution": "```python\ndef digits(n):\n    product = 1\n    has_odd_digit = False\n    \n    while n > 0:\n        digit = n % 10\n        if digit % 2 == 1:  # Check if the digit is odd\n            product *= digit\n            has_odd_digit = True\n        n //= 10\n    \n    return product if has_odd_digit else 0\n```"}

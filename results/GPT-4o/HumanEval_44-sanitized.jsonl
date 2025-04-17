@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/44", "solution": "def change_base(x: int, base: int) -> str:\n    if x == 0:\n        return \"0\"\n    digits = []\n    while x:\n        digits.append(str(x % base))\n        x //= base\n    return ''.join(reversed(digits))"}

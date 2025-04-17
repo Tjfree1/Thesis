@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/12", "solution": "def longest(strings: List[str]) -> Optional[str]:\n    if not strings:\n        return None\n    return max(strings, key=len)"}

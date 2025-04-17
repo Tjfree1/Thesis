@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/8", "solution": "from typing import List, Tuple\ndef sum_product(numbers: List[int]) -> Tuple[int, int]:\n    total_sum = 0\n    total_product = 1\n    \n    for num in numbers:\n        total_sum += num\n        total_product *= num\n\n    return total_sum, total_product"}

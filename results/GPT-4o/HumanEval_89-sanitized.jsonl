@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/89", "solution": "def encrypt(s):\n    def shift_char(c):\n        if 'a' <= c <= 'z':\n            return chr(((ord(c) - ord('a') + 4) % 26) + ord('a'))\n        return c\n\n    return ''.join(shift_char(c) for c in s)"}

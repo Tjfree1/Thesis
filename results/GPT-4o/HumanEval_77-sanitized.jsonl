@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/77", "solution": "def iscube(a):\n    if a < 0:\n        a = -a\n    cube_root = round(a ** (1/3))\n    return cube_root ** 3 == a"}

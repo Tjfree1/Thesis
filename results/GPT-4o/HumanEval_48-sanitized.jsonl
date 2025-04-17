@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/48", "solution": "def is_palindrome(text: str) -> bool:\n    return text == text[::-1]"}

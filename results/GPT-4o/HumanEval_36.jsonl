@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/36", "solution": "```python\ndef fizz_buzz(n: int):\n    count = 0\n    for i in range(n):\n        if i % 11 == 0 or i % 13 == 0:\n            count += str(i).count('7')\n    return count\n```"}

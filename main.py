@@ -10,10 +10,10 @@ import gen_solution
 def main():
     problems = get_human_eval_plus()
 
-    os.makedirs("results", exist_ok=True)
-    os.makedirs("results/metrics", exist_ok=True)
+    #os.makedirs("results", exist_ok=True)
+    #os.makedirs("results/metrics", exist_ok=True)
 
-    file = open("results/metrics/passAtK.txt", "x")
+    file = open("results/GPT-4o/metrics/passAtK.txt", "x")
     file.close()
 
     i=0
@@ -22,15 +22,15 @@ def main():
         print(f"Solving Problem: {task_id}")
 
         try:
-            solution = gen_solution.deepseek(problem["prompt"])
+            solution = gen_solution.gpt4o(problem["prompt"])
         except Exception as e:
             print(f"Error generating solution for {task_id}: {e}")
             continue
 
         sample = {"task_id": task_id, "solution": solution}
         task_id_sanitized = task_id.replace('/', '_')
-        raw_file = f"results/{task_id_sanitized}.jsonl"
-        sanitized_file = f"results/{task_id_sanitized}-sanitized.jsonl"
+        raw_file = f"results/GPT-4o/{task_id_sanitized}.jsonl"
+        sanitized_file = f"results/GPT-4o/{task_id_sanitized}-sanitized.jsonl"
 
         # Write raw sample
         write_jsonl(raw_file, [sample])
@@ -45,13 +45,13 @@ def main():
 
         try:
             sanitized_path = os.path.dirname(sanitized_file)
-            eval_dir = f"results/HumanEval_{i}-sanitized.jsonl"
+            eval_dir = f"results/GPT-4o/HumanEval_{i}-sanitized.jsonl"
             evaluate("humaneval", eval_dir)
 
         except Exception as e:
             print(f"Evaluation failed for {task_id}: {e}")
         
-        eval_result_path = f"results/HumanEval_{i}-sanitized.eval_results.json"
+        eval_result_path = f"results/GPT-4o/HumanEval_{i}-sanitized.eval_results.json"
         try:
             with open(eval_result_path, "r") as f:
                 data = json.load(f)
@@ -62,7 +62,7 @@ def main():
             plus_pass_at_1 = "ERROR"
             print(f"Error reading eval results for {task_id}: {e}")
 
-        with open("results/metrics/passAtK.txt", "a") as file:
+        with open("results/GPT-4o/metrics/passAtK.txt", "a") as file:
             file.write(f"{task_id} | base pass@1: {base_pass_at_1}, plus pass@1: {plus_pass_at_1}\n")
 
         i += 1

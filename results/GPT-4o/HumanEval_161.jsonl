@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/161", "solution": "```python\ndef solve(s):\n    if any(c.isalpha() for c in s):\n        return ''.join(c.swapcase() if c.isalpha() else c for c in s)\n    else:\n        return s[::-1]\n\n# Example usage:\n# print(solve(\"1234\"))  # Output: \"4321\"\n# print(solve(\"ab\"))    # Output: \"AB\"\n# print(solve(\"#a@C\"))  # Output: \"#A@c\"\n```"}

@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/0", "solution": "from typing import List\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    numbers.sort()\n    for i in range(len(numbers) - 1):\n        if abs(numbers[i] - numbers[i + 1]) < threshold:\n            return True\n    return False"}

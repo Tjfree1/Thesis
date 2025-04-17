@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/34", "solution": "```python\ndef unique(l: list):\n    \"\"\"Return sorted unique elements in a list.\"\"\"\n    return sorted(set(l))\n\n# Example usage:\n# result = unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n# print(result)  # Output: [0, 2, 3, 5, 9, 123]\n```"}

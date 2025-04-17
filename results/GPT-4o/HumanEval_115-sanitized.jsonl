@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/115", "solution": "def max_fill(grid, capacity):\n    total_units = 0\n    \n    # Sum up all the water units in the grid\n    for row in grid:\n        total_units += sum(row)\n    \n    # Calculate the number of bucket operations needed\n    return math.ceil(total_units / capacity)"}

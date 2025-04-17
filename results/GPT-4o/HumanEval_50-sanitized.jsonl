@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/50", "solution": "def decode_shift(s: str):\n    \"\"\"\n    Takes as input a string encoded with the encode_shift function. Returns decoded string.\n    \"\"\"\n    return \"\".join([chr(((ord(ch) - 5 - ord(\"a\")) % 26) + ord(\"a\")) for ch in s])"}

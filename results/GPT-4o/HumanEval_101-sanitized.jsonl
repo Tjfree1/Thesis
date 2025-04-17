@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/101", "solution": "def words_string(s):\n    import re\n    # Use regex to split the string by commas or spaces\n    words = re.split(r'[,\\s]+', s.strip())\n    return [word for word in words if word]"}

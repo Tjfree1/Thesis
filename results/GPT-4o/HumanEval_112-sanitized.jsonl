@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/112", "solution": "def reverse_delete(s, c):\n    # Remove all characters in s that are in c\n    result_string = ''.join([char for char in s if char not in c])\n    \n    # Check if the result string is a palindrome\n    is_palindrome = result_string == result_string[::-1]\n    \n    return (result_string, is_palindrome)"}

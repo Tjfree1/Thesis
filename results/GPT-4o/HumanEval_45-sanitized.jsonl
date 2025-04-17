@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/45", "solution": "def triangle_area(a, h):\n    \"\"\"Given length of a side and height return area for a triangle.\"\"\"\n    return 0.5 * a * h"}

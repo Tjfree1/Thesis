@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/104", "solution": "def unique_digits(x):\n    def has_no_even_digit(number):\n        # Convert the number to a string and check each digit\n        return all(int(digit) % 2 != 0 for digit in str(number))\n    \n    # Filter the list to keep only numbers without any even digit and sort the result\n    return sorted(filter(has_no_even_digit, x))"}

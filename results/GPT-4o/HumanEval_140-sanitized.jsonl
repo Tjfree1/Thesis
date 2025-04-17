@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/140", "solution": "def fix_spaces(text):\n    import re\n\n    # Replace all occurrences of 3 or more spaces with a single hyphen\n    text = re.sub(r'\\s{3,}', '-', text)\n    \n    # Replace all single spaces with underscores\n    text = re.sub(r'\\s', '_', text)\n\n    return text"}

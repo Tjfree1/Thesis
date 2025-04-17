@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/74", "solution": "def total_match(lst1, lst2):\n    # Calculate the total number of characters in each list\n    len_lst1 = sum(len(s) for s in lst1)\n    len_lst2 = sum(len(s) for s in lst2)\n    \n    # Return the list with fewer total characters, or lst1 if they are equal\n    if len_lst1 < len_lst2:\n        return lst1\n    else:\n        return lst2"}

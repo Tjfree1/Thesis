@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/12", "solution": "```python\ndef longest(strings: List[str]) -> Optional[str]:\n    if not strings:\n        return None\n    return max(strings, key=len)\n\n# Example usage\nif __name__ == \"__main__\":\n    print(longest([]))  # Output: None\n    print(longest(['a', 'b', 'c']))  # Output: 'a'\n    print(longest(['a', 'bb', 'ccc']))  # Output: 'ccc'\n```"}
