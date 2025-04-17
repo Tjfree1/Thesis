@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/72", "solution": "```python\ndef will_it_fly(q, w):\n    is_palindrome = q == q[::-1]\n    sum_elements = sum(q)\n    return is_palindrome and sum_elements <= w\n```"}

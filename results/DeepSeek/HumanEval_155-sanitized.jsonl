@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/155", "solution": "def even_odd_count(num):\n    even = 0\n    odd = 0\n    for digit in str(abs(num)):\n        if int(digit) % 2 == 0:\n            even += 1\n        else:\n            odd += 1\n    return (even, odd)"}

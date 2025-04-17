@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/151", "solution": "def double_the_difference(lst):\n    total = 0\n    for num in lst:\n        if isinstance(num, int) and num > 0 and num % 2 != 0:\n            total += num * num\n    return total"}

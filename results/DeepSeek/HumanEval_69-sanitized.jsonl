@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/69", "solution": "def search(lst):\n    frequency = {}\n    for num in lst:\n        if num > 0:\n            frequency[num] = frequency.get(num, 0) + 1\n    \n    max_num = -1\n    for num, count in frequency.items():\n        if num <= count and num > max_num:\n            max_num = num\n    \n    return max_num"}

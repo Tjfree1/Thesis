@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/150", "solution": "```python\ndef is_prime(num):\n    if num <= 1:\n        return False\n    if num == 2:\n        return True\n    if num % 2 == 0:\n        return False\n    for i in range(3, int(num**0.5) + 1, 2):\n        if num % i == 0:\n            return False\n    return True\n\ndef x_or_y(n, x, y):\n    return x if is_prime(n) else y\n```"}

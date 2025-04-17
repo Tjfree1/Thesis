@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/64", "solution": "def vowels_count(s):\n    vowels = {'a', 'e', 'i', 'o', 'u'}\n    count = 0\n    lower_s = s.lower()\n    for i, char in enumerate(lower_s):\n        if char in vowels:\n            count += 1\n        if char == 'y' and i == len(lower_s) - 1:\n            count += 1\n    return count"}

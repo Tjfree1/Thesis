@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/104", "solution": "def unique_digits(x):\n    result = []\n    for num in x:\n        all_odd = True\n        for digit in str(num):\n            if int(digit) % 2 == 0:\n                all_odd = False\n                break\n        if all_odd:\n            result.append(num)\n    return sorted(result)"}

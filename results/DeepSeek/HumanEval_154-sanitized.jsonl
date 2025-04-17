@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/154", "solution": "def cycpattern_check(a, b):\n    if not b:\n        return True\n    doubled_b = b + b\n    for i in range(len(b)):\n        rotated = doubled_b[i:i+len(b)]\n        if rotated in a:\n            return True\n    return False"}

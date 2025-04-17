@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/45", "solution": "def triangle_area(a, h):\n    return a * h / 2"}

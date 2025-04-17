@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/152", "solution": "```python\ndef compare(game, guess):\n    return [abs(g - s) if g != s else 0 for s, g in zip(game, guess)]\n```"}

@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/58", "solution": "def common(l1: list, l2: list):\n    common_elements = set(l1) & set(l2)\n    return sorted(common_elements)"}

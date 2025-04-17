@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/54", "solution": "def same_chars(s0: str, s1: str):\n    return set(s0) == set(s1)"}

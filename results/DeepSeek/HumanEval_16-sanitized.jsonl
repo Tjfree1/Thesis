@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/16", "solution": "def count_distinct_characters(string: str) -> int:\n    return len({char.lower() for char in string})"}

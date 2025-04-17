@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/27", "solution": "def flip_case(string: str) -> str:\n    return string.swapcase()"}

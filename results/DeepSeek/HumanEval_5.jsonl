@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/5", "solution": "```python\nfrom typing import List\n\n\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    if not numbers:\n        return []\n    result = []\n    for num in numbers[:-1]:\n        result.append(num)\n        result.append(delimeter)\n    result.append(numbers[-1])\n    return result\n```"}

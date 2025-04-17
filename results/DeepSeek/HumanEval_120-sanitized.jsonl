@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/120", "solution": "def maximum(arr, k):\n    if k == 0:\n        return []\n    sorted_arr = sorted(arr)\n    return sorted_arr[-k:]"}

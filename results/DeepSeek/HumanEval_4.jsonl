@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/4", "solution": "```python\nfrom typing import List\n\ndef mean_absolute_deviation(numbers: List[float]) -> float:\n    if not numbers:\n        return 0.0\n    mean = sum(numbers) / len(numbers)\n    absolute_diffs = [abs(x - mean) for x in numbers]\n    return sum(absolute_diffs) / len(absolute_diffs)\n```"}

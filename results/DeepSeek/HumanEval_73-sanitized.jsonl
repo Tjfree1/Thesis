@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/73", "solution": "def smallest_change(arr):\n    changes = 0\n    left = 0\n    right = len(arr) - 1\n    while left < right:\n        if arr[left] != arr[right]:\n            changes += 1\n        left += 1\n        right -= 1\n    return changes"}

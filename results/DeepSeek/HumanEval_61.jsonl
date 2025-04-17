@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/61", "solution": "```python\ndef correct_bracketing(brackets: str):\n    balance = 0\n    for char in brackets:\n        if char == '(':\n            balance += 1\n        else:\n            balance -= 1\n        if balance < 0:\n            return False\n    return balance == 0\n```"}

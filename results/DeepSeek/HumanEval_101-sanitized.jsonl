@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/101", "solution": "import re\ndef words_string(s):\n    if not s.strip():\n        return []\n    return re.split(r'[,\\s]+', s.strip())"}

@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/28", "solution": "from typing import List\ndef concatenate(strings: List[str]) -> str:\n    return ''.join(strings)"}

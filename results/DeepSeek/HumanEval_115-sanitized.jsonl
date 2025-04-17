@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/115", "solution": "import math\ndef max_fill(grid, capacity):\n    total = 0\n    for well in grid:\n        water = sum(well)\n        if water > 0:\n            total += math.ceil(water / capacity)\n    return total"}

@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/88", "solution": "```python\ndef sort_array(array):\n    if not array:\n        return array.copy()\n    first = array[0]\n    last = array[-1]\n    sum_fl = first + last\n    sorted_array = sorted(array.copy())\n    if sum_fl % 2 == 0:\n        sorted_array = sorted(array.copy(), reverse=True)\n    return sorted_array\n```"}

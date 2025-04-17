@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/12", "solution": "```python\nfrom typing import List, Optional\n\n\ndef longest(strings: List[str]) -> Optional[str]:\n    if not strings:\n        return None\n    max_len = -1\n    result = None\n    for s in strings:\n        if len(s) > max_len:\n            max_len = len(s)\n            result = s\n    return result\n```"}

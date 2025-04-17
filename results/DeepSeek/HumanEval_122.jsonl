@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/122", "solution": "```python\ndef add_elements(arr, k):\n    total = 0\n    for num in arr[:k]:\n        if 10 <= num <= 99 or -99 <= num <= -10:\n            total += num\n        elif 0 <= num < 10 or -9 <= num < 0:\n            total += num\n    return total\n```"}

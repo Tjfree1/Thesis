@@ -1,0 +1,1 @@
+{"date": "2025-04-17 16:42", "hash": "fe585eb4df8c88d844eeb463ea4d0302", "eval": {"HumanEval/27": [{"task_id": "HumanEval/27", "solution": "def flip_case(string: str) -> str:\n    return string.swapcase()", "base_status": "pass", "plus_status": "pass", "base_fail_tests": [], "plus_fail_tests": []}]}, "pass_at_k": {"base": {"pass@1": 1.0}, "plus": {"pass@1": 1.0}}}

@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/7", "solution": "from typing import List\ndef filter_by_substring(strings: List[str], substring: str) -> List[str]:\n    return [s for s in strings if substring in s]"}

@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/102", "solution": "```python\ndef choose_num(x, y):\n    start = min(x, y)\n    end = max(x, y)\n    for num in range(end, start - 1, -1):\n        if num % 2 == 0:\n            return num\n    return -1\n```"}

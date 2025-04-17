@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/14", "solution": "```python\nfrom typing import List\n\n\ndef all_prefixes(string: str) -> List[str]:\n    return [string[:i] for i in range(1, len(string) + 1)]\n```"}

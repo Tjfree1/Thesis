@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/34", "solution": "```python\ndef unique(l: list):\n    return sorted(list(set(l)))\n```"}

@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/18", "solution": "def how_many_times(string: str, substring: str) -> int:\n    count = 0\n    sub_len = len(substring)\n    str_len = len(string)\n    if sub_len == 0:\n        return 0\n    for i in range(str_len - sub_len + 1):\n        if string[i:i+sub_len] == substring:\n            count += 1\n    return count"}

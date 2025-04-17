@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/67", "solution": "```python\nimport re\n\ndef fruit_distribution(s, n):\n    numbers = list(map(int, re.findall(r'\\d+', s)))\n    return n - sum(numbers)\n```"}

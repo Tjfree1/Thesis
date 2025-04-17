@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/63", "solution": "```python\ndef fibfib(n: int):\n    if n == 0 or n == 1:\n        return 0\n    elif n == 2:\n        return 1\n    a, b, c = 0, 0, 1\n    for _ in range(3, n + 1):\n        a, b, c = b, c, a + b + c\n    return c\n```"}

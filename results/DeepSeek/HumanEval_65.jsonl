@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/65", "solution": "```python\ndef circular_shift(x, shift):\n    s = str(x)\n    length = len(s)\n    if shift > length:\n        return s[::-1]\n    shift = shift % length\n    return s[-shift:] + s[:-shift]\n```"}

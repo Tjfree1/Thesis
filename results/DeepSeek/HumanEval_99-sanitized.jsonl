@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/99", "solution": "def closest_integer(value):\n    num = float(value)\n    if num >= 0:\n        return int(num + 0.5)\n    else:\n        return int(num - 0.5)"}

@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/163", "solution": "def generate_integers(a, b):\n    start = min(a, b)\n    end = max(a, b)\n    result = []\n    for num in range(start, end + 1):\n        if all(int(digit) % 2 == 0 for d in str(num) for d in str(num)):\n            result.append(num)\n    return result"}

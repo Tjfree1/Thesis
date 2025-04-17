@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/43", "solution": "```python\ndef pairs_sum_to_zero(l):\n    seen = set()\n    for num in l:\n        if -num in seen:\n            return True\n        seen.add(num)\n    return False\n```"}

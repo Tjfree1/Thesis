@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/33", "solution": "```python\ndef sort_third(l: list):\n    indices = [i for i in range(len(l)) if i % 3 == 0]\n    values = sorted([l[i] for i in indices])\n    result = l.copy()\n    for idx, val in zip(indices, values):\n        result[idx] = val\n    return result\n```"}

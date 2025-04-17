@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/97", "solution": "def multiply(a, b):\n    unit_a = abs(a) % 10\n    unit_b = abs(b) % 10\n    return unit_a * unit_b"}

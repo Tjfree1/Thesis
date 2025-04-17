@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/100", "solution": "def make_a_pile(n):\n    stones = []\n    current = n\n    for _ in range(n):\n        stones.append(current)\n        if current % 2 == 1:\n            current += 2\n        else:\n            current += 2\n    return stones"}

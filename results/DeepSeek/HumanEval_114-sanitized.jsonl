@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/114", "solution": "def minSubArraySum(nums):\n    min_sum = current_sum = nums[0]\n    for num in nums[1:]:\n        current_sum = min(num, current_sum + num)\n        min_sum = min(min_sum, current_sum)\n    return min_sum"}

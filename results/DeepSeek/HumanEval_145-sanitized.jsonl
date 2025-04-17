@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/145", "solution": "def order_by_points(nums):\n    def digit_sum(n):\n        return sum(int(d) for d in str(abs(n)))\n    \n    indexed_nums = [(digit_sum(num), i, num) for i, num in enumerate(nums)]\n    indexed_nums.sort()\n    return [num for (_, _, num) in indexed_nums]"}

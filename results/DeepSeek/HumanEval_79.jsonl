@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/79", "solution": "```python\ndef decimal_to_binary(decimal):\n    if decimal == 0:\n        return \"db0db\"\n    binary = []\n    num = decimal\n    while num > 0:\n        binary.append(str(num % 2))\n        num = num // 2\n    binary_str = ''.join(reversed(binary))\n    return f\"db{binary_str}db\"\n```"}

@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/131", "solution": "def digits(n):\n    product = 1\n    has_odd = False\n    for digit in str(n):\n        num = int(digit)\n        if num % 2 != 0:\n            product *= num\n            has_odd = True\n    return product if has_odd else 0"}

@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/51", "solution": "def remove_vowels(text):\n    vowels = \"aeiouAEIOU\"\n    return ''.join([char for char in text if char not in vowels])"}

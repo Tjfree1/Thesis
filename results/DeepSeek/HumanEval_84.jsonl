@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/84", "solution": "```python\ndef solve(N):\n    sum_digits = sum(int(d) for d in str(N))\n    return bin(sum_digits)[2:]\n```"}

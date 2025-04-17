@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/17", "solution": "from typing import List\ndef parse_music(music_string: str) -> List[int]:\n    note_map = {\n        'o': 4,\n        'o|': 2,\n        '.|': 1\n    }\n    notes = music_string.split()\n    beats = []\n    for note in notes:\n        beats.append(note_map[note])\n    return beats"}

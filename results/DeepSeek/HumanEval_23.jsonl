@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/23", "solution": "```python\ndef strlen(string: str) -> int:\n    length = 0\n    for _ in string:\n        length += 1\n    return length\n```"}

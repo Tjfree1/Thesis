@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/134", "solution": "```python\ndef check_if_last_char_is_a_letter(txt):\n    if not txt:\n        return False\n    last_char = txt[-1]\n    if not last_char.isalpha():\n        return False\n    if len(txt) == 1:\n        return True\n    if txt[-2] == ' ':\n        return True\n    return False\n```"}

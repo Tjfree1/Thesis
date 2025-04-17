@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/41", "solution": "```python\ndef car_race_collision(n: int):\n    return n * n\n```"}

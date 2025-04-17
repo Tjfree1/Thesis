@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/22", "solution": "```python\nfrom typing import List, Any\n\n\ndef filter_integers(values: List[Any]) -> List[int]:\n    return [x for x in values if type(x) == int]\n```"}

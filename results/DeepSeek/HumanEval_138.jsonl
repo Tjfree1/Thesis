@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/138", "solution": "```python\ndef is_equal_to_sum_even(n):\n    if n < 8 or n % 2 != 0:\n        return False\n    return True\n```"}

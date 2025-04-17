@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/149", "solution": "```python\ndef sorted_list_sum(lst):\n    filtered = [word for word in lst if len(word) % 2 == 0]\n    filtered.sort(key=lambda x: (len(x), x))\n    return filtered\n```"}

@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/92", "solution": "```python\ndef any_int(x, y, z):\n    if all(isinstance(num, int) for num in (x, y, z)):\n        return x == y + z or y == x + z or z == x + y\n    return False\n```"}

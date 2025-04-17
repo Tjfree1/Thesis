@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/78", "solution": "def hex_key(num):\n    primes = {'2', '3', '5', '7', 'B', 'D'}\n    count = 0\n    for digit in num:\n        if digit in primes:\n            count += 1\n    return count"}

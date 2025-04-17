@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/159", "solution": "```python\ndef eat(number, need, remaining):\n    if remaining >= need:\n        total = number + need\n        left = remaining - need\n    else:\n        total = number + remaining\n        left = 0\n    return [total, left]\n```"}

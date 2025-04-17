@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/55", "solution": "def fib(n: int):\n    if n == 0:\n        return 0\n    a, b = 0, 1\n    for _ in range(n - 1):\n        a, b = b, a + b\n    return b"}

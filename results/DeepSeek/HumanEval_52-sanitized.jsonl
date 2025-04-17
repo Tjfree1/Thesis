@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/52", "solution": "def below_threshold(l: list, t: int):\n    return all(x < t for x in l)"}

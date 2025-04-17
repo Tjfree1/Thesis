@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/86", "solution": "def anti_shuffle(s):\n    words = s.split(' ')\n    ordered_words = []\n    for word in words:\n        sorted_chars = sorted(word, key=lambda x: ord(x))\n        ordered_word = ''.join(sorted_chars)\n        ordered_words.append(ordered_word)\n    return ' '.join(ordered_words)"}

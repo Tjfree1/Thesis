@@ -1,0 +1,1 @@
+{"task_id": "HumanEval/76", "solution": "```python\ndef is_simple_power(x, n):\n    if n == 1:\n        return x == 1\n    power = 0\n    while n ** power <= x:\n        if n ** power == x:\n            return True\n        power += 1\n    return False\n```"}
